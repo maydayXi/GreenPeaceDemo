@@ -37,13 +37,11 @@
 		});
 
 		// close menu clicking outside the itself 
-		// siteBody.on('click', function (e) {
-		// 	if( !$(e.target).is('.header-nav, .header-nav_contain')) {
-		// 		console.log("outside");
-		// 	} else {
-		// 		console.log("inside");
-		// 	}
-		// });
+		siteBody.on('click', function (e) {
+			if( !$(e.target).is('.header-nav, .header-nav_contain, .header-menu-toggle, .header-menu-toggle span')) {
+				siteBody.removeClass('menu-is-open');
+			}
+		});
 	};
 
 // Smooth Scrolling ============================
