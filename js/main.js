@@ -99,12 +99,31 @@
 
 	};
 
+// Back To Top 
+	var backToTop =function () {
+		var pxShow 			= 500,
+				fadeInTime 	= 400,
+				fadeOutTime	= 400,
+				scrollSpeed	= 300,
+				goTopBtn		= $('.go-top');
+
+		// Show or hide the go top button
+		$(window).on('scroll', function () {
+			if($(window).scrollTop() >= pxShow) {
+				goTopBtn.fadeIn(fadeInTime);
+			} else {
+				goTopBtn.fadeOut(fadeOutTime);
+			}
+		});
+	};
+
 	(function init() {
 		elementAnimation();
 		openCloseMenu();
 		menuOnScrolldown();
 		smoothScroll();
 		SlideShow();
+		backToTop();
 	})();
 
 })(jQuery);

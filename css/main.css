@@ -431,12 +431,21 @@ section {
 		.header-nav {
 			width: 30vw;
 		}
+		.header-nav_close {
+			top: 55px;
+		}
 	}
 
 	@media only screen and (max-width: 576px) {
 		.header-nav_close {
 			top: 50px;
 			right: 20px;
+		}
+	}
+
+	@media only screen and (max-width: 500px) {
+		.header-nav h3 {
+			letter-spacing: .1rem;
 		}
 	}
 
@@ -873,8 +882,8 @@ section {
 	.card {
 		margin: 10px 0;
 		min-height: 25rem;
-		-webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .5);
-		box-shadow: 0 0 12px 1px rgba(0, 0, 0, .5);
+		-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+		box-shadow: 0 0 8px rgba(0, 0, 0, .5);
 	}
 
 	.card-text {
@@ -1120,14 +1129,270 @@ section {
 /* Team Style */
 	.team {
 		width: 100%;
-		padding-bottom: 9rem;
+		padding: 0 68px;
+		padding-bottom: 5rem;
 		position: relative;
 	}
 
-/* Footer Style */
-	footer {
-		padding: 10px;
+	.person-img {
+		/*max-width: 50%;*/
+		width: 75%;
+		margin: 0 auto;
+	}
+	
+	.person-img img {
+		/*height: 50vh;*/
+		border-radius: 50%;
+	}
+
+	.team .person-details {
+		position: relative;
+	}
+
+	.team .person-information {
 		width: 100%;
-		text-align: center;
+		padding: 15px 0 25px 0;
+	}
+
+	.team .person-information ul {
+		position: relative;
+		top: 0;
+		display: inline-block;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.team .person-information ul:nth-child(1) {
+		left: 5rem;
+		top: -14rem;
+	}
+
+	.team .person-information ul:nth-child(2) {
+		left: 8rem;
+	}
+
+	.team .person-information ul li {
+		margin-top: 1.2rem;
+		line-height: 26px;
+		color: #333333;
+		font-size: 1.5rem;
+	}
+
+	.team .person-information ul:nth-child(2) li {
+		margin: 1.2rem 0;
+	}
+
+	.team .person-information ul li i {
+		font-size: 1rem;
+		margin-right: 4px;
+	}
+
+	.team .person-information ul a {
+		text-decoration: none;
+	}
+
+/* RWD Team */
+	@media only screen and (max-width: 1000px) {
+		.col-md-6 {
+			padding: 0;
+		}
+	}
+
+	@media only screen and (max-width: 972px) {
+		.col-md-6 {
+			margin-left: -1.5rem;
+		}
+		.team .person-information ul:nth-child(1) {
+			top: -10.6rem;
+		}
+		.team .person-information ul:nth-child(2) li {
+			margin: .5rem 0;
+		}
+		.team .person-information ul:nth-child(1) li {
+			margin: .5rem 0;
+		}
+	}
+
+	@media only screen and (max-width: 900px) {
+		.team .person-information ul:nth-child(2) {
+			left: 6rem;
+			top: 0;
+		}
+	}
+	
+	@media only screen and (max-width: 769px) {
+		.col-md-6 {
+			margin-left: 0;
+		}
+		.person-img {
+			max-width: 100%;
+		}
+		.person-img img {
+			width: 50%;
+			margin: 0 auto;
+		}
+		.team .person-information {
+			position: relative;
+			margin-top: 2rem;
+			padding-left: 6rem;
+		}
+	}
+
+	@media only screen and (max-width: 720px) {
+		.team .person-information {
+			padding-left: 4rem;
+		}
+	}
+
+	@media only screen and (max-width: 700px) {
+		.team .person-information ul:nth-child(1) {
+			left: 2rem;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.team .person-details {
+			margin-left: 0;
+		}
+		.team .person-information ul:nth-child(2) {
+			left: 4rem;
+		}
+	}
+
+	@media only screen and (max-width: 500px) {
+		.team .person-information {
+			padding-left: 2rem;
+		}
+		.team .person-information ul li {
+			font-size: 1.3rem;
+		}
+	}
+
+/* Footer Style */
+	.footer {
+		padding: 10px;
 		background-color: #111111;
+	}
+
+	.footer h3 {
+		margin-bottom: 1rem;
+	}
+
+	.footer h4 {
+		margin: 0 auto;
+	}
+
+	.footer ul {
+		list-style-type: none;
+	}
+
+	.footer ul li {
+		padding: .5rem 0;
+	}
+
+	.footer a {
+		text-decoration: none;
+	}
+
+	.footer a:hover {
+		color: #ffffff !important;
+	}
+
+	.footer a:active, .footer a:focus {
+		color: #28a745 !important;
+	}
+
+	.footer a img {
+		width: 28px;
+	}
+
+	.link-details, .footer .ref-details {
+		padding-left: 13rem;
+	}
+
+	.go-top {
+		display: block;
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		z-index: 600;
+		margin: 0;
+		padding: 0;
+	}
+
+	.go-top a {
+		text-decoration: none;
+		border: 0 none;
+		display: block;
+		height: 60px;
+		width: 60px;
+		line-height: 60px;
+		background-color: black;
+		color: rgba(255, 255, 255, .5);
+		text-align: center;
+	}
+
+	.go-top a:hover {
+		color: white !important;
+	}
+
+	.go-top a:active, .go-top a:focus {
+		color: rgba(255, 255, 255, .5) !important;
+	}
+
+/* RWD Footer */
+	@media only screen and (max-width: 1020px) {
+		.footer .link-details, .footer .ref-details {
+			padding-left: 10rem;
+		}
+	}
+
+	@media only screen and (max-width: 900px) {
+		.footer .link-details, .footer .ref-details {
+			padding-left: 8.5rem;
+		}
+	}
+
+	@media only screen and (max-width: 800px) {
+		.footer .link-details, .footer .ref-details {
+			padding-left: 7rem;
+		}
+		.copyright {
+			font-size: 1.2rem;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		.footer-link, .footer-ref {
+			padding-top: 2rem;
+		}
+		.footer .link-details, .footer .ref-details {
+			padding-left: 6rem;
+			font-size: 1.2rem;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.footer .link-details, .footer .ref-details {
+			padding-left: 4rem;
+		}
+		.copyright {
+			font-size: 1rem;
+		}
+	}
+
+	@media only screen and (max-width: 575px) {
+		.footer .link-details, .footer .ref-details {
+			padding-left: 12rem;
+		}
+	}
+
+	@media only screen and (max-width: 500px) {
+		.footer .link-details, .footer .ref-details {
+			padding-left: 10rem;
+		}
+		.copyright {
+			font-size: .8rem;
+		}
 	}
