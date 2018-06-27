@@ -1427,10 +1427,10 @@ section {
 
 	@media only screen and (max-width: 360px) {
 		.team {
-			height: 170vh;
+			height: 180vh;
 		}
 		.team .row:nth-child(2), .team .row:nth-child(3) {
-			height: 75vh;
+			height: 95vh;
 		}
 		.team .row:nth-child(2) .person-information ul:nth-child(1) li,
 		.team .row:nth-child(3) .person-information ul:nth-child(1) li {
