@@ -450,14 +450,38 @@ section {
 	@media only screen and (max-width: 480px) {
 		.header-menu-toggle {
 			background-color: #111111;
-			width: 40px;
-			right: 10px;
+			width: 60px;
+			height: 60px;
+		}
+		.header-menu-icon {
+			left: 20px;
 		}
 		.header-nav_close {
 			right: 15px;
 		}
 		.header-menu-text {
 			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.header-nav h3 {
+			font-size: .8rem;
+		}
+		.header-nav_list li {
+			line-height: 2rem;
+		}
+		.header-nav a.smoothscroll {
+			font-size: 1rem;
+		}
+	}
+
+	@media only screen and (max-width: 360px) {
+		.menu-is-open .header-nav .header-nav_content {
+			left: -5px;
+		}
+		.header-nav h3 {
+			font-size: .5rem;
 		}
 	}
 
@@ -1361,7 +1385,19 @@ section {
 		}
 	}
 
+	@media only screen and (max-width: 480px) {
+		.team {
+			height: 175vh;
+		}
+	}
+
 	@media only screen and (max-width: 450px) {
+		.team {
+			height: 160vh;
+		}
+		.team .row:nth-child(2), .team .row:nth-child(3) {
+			height: 75vh;
+		}
 		.team .row:nth-child(2) .person-information ul:nth-child(1) {
 			top: 0;
 			left: -1.5rem;
@@ -1390,6 +1426,12 @@ section {
 	}
 
 	@media only screen and (max-width: 360px) {
+		.team {
+			height: 140vh;
+		}
+		.team .row:nth-child(2), .team .row:nth-child(3) {
+			height: 65vh;
+		}
 		.team .row:nth-child(2) .person-information ul:nth-child(1) li,
 		.team .row:nth-child(3) .person-information ul:nth-child(1) li {
 			font-size: 1rem;
