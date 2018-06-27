@@ -648,6 +648,7 @@ section {
 	@media only screen and (max-width: 600px) {
 		.home-content h1 {
 			font-size: 2.8rem;
+			width: 300px;
 		}
 	}
 
@@ -668,6 +669,15 @@ section {
 	@media only screen and (max-width: 450px) {
 		.home-content_main {
 			width: auto;
+		}
+	}
+
+	@media only screen and (max-width: 360px) {
+		.home-content h3 {
+			width: 200px;
+		}
+		.home-content_scroll a {
+			width: 200px;
 		}
 	}
 
@@ -828,6 +838,9 @@ section {
 		.timeline ul li:nth-child(even) .content {
 			left: calc(-35vw - 30px);
 		}
+		.timeline ul li .content h2 {
+			font-size: 2rem;
+		}
 	}
 
 	@media only screen and (max-width: 500px) {
@@ -843,6 +856,30 @@ section {
 	@media only screen and (max-width: 480px) {
 		.timeline ul li:nth-child(even) .content {
 			left: calc(-30vw - 40px);
+		}
+	}
+
+	@media only screen and (max-width: 450px) {
+		.timeline ul li:nth-child(even) .content {
+			left: calc(-30vw - 35px);
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.timeline ul li:nth-child(even) .content {
+			left: calc(-30vw - 25px);
+		}
+		.timeline ul li .content h2 {
+			font-size: 1.6rem;
+		}
+	}
+
+	@media only screen and (max-width: 360px) {
+		.timeline ul li:nth-child(even) .content {
+			left: calc(-30vw - 15px);
+		}
+		.timeline ul li .content h2 {
+			font-size: 1.2rem;
 		}
 	}
 
@@ -1291,14 +1328,17 @@ section {
 		.team .person-details {
 			margin-left: 0;
 		}
-		.team .person-information ul:nth-child(2) {
-			left: 4rem;
+		.team .row:nth-child(2) .person-information ul:nth-child(2) {
+			left: 3rem;
 		}
+		.team .row:nth-child(3) .person-information ul:nth-child(2) {
+			left: 3rem;
+		} 
 	}
 
 	@media only screen and (max-width: 576px) {
 		.team .row:nth-child(3) .person-information ul:nth-child(2) {
-			left: 14rem;
+			left: 11rem;
 			top: -17.5rem;
 		}
 	}
@@ -1315,6 +1355,45 @@ section {
 		}
 		.team .row:nth-child(3) .person-information ul:nth-child(2) {
 			left: 10rem;
+		}
+	}
+
+	@media only screen and (max-width: 450px) {
+		.team .row:nth-child(2) .person-information ul:nth-child(1) {
+			top: 0;
+			left: -1.5rem;
+		}
+		.team .row:nth-child(2) .person-information ul:nth-child(2) {
+			top: -11rem;
+			left: 7.5rem;
+		}
+		.team .row:nth-child(3) .person-information ul:nth-child(1) {
+			left: -1.5rem;
+		}
+		.team .row:nth-child(3) .person-information ul:nth-child(2) {
+			left: 7.5rem;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.team .row:nth-child(2) .person-information ul:nth-child(1),
+		.team .row:nth-child(3) .person-information ul:nth-child(1) {
+			left: -4rem;
+		}
+		.team .row:nth-child(2) .person-information ul:nth-child(2),
+		.team .row:nth-child(3) .person-information ul:nth-child(2) {
+			left: 4.5rem;
+		}
+	}
+
+	@media only screen and (max-width: 360px) {
+		.team .row:nth-child(2) .person-information ul:nth-child(1) li,
+		.team .row:nth-child(3) .person-information ul:nth-child(1) li {
+			font-size: 1rem;
+		}
+		.team .row:nth-child(2) .person-information ul:nth-child(2) li,
+		.team .row:nth-child(3) .person-information ul:nth-child(2) li {
+			font-size: 1rem;
 		}
 	}
 
@@ -1445,3 +1524,24 @@ section {
 			font-size: .8rem;
 		}
 	}
+
+	@media only screen and (max-width: 450px) {
+		.footer .link-details, .footer .ref-details {
+			padding-left: 9rem;
+		}
+		.copyright {
+			font-size: .6rem;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.footer .link-details, .footer .ref-details {
+			padding-left: 7rem;
+		}
+	}
+
+	@media only screen and (max-width: 360px) {
+		.footer .link-details, .footer .ref-details {
+			padding-left: 6rem;
+		}
+	}	
