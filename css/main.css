@@ -417,10 +417,8 @@ section {
 		.header {
 			height: 90px;
 		}
-
-
 		.header-logo {
-			left: 30px;
+			left: -10px;
 		}
 		.header-menu-toggle {
 			right: 35px;
@@ -450,6 +448,11 @@ section {
 	}
 
 	@media only screen and (max-width: 480px) {
+		.header-menu-toggle {
+			background-color: #111111;
+			width: 40px;
+			right: 10px;
+		}
 		.header-nav_close {
 			right: 15px;
 		}
