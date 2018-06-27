@@ -1134,6 +1134,10 @@ section {
 		position: relative;
 	}
 
+	.team .row {
+		margin-bottom: 3rem;
+	}
+
 	.person-img {
 		/*max-width: 50%;*/
 		width: 75%;
@@ -1143,6 +1147,8 @@ section {
 	.person-img img {
 		/*height: 50vh;*/
 		border-radius: 50%;
+		border: 1px solid #28a745;
+		padding: 6px
 	}
 
 	.team .person-details {
@@ -1170,6 +1176,14 @@ section {
 
 	.team .person-information ul:nth-child(2) {
 		left: 8rem;
+	}
+
+	.team .row:nth-child(3) .person-information ul:nth-child(1) {
+		top: 0;
+	}
+
+	.team .row:nth-child(3) .person-information ul:nth-child(2) {
+		left: 7rem;
 	}
 
 	.team .person-information ul li {
@@ -1215,9 +1229,27 @@ section {
 	}
 
 	@media only screen and (max-width: 900px) {
-		.team .person-information ul:nth-child(2) {
+		.team {
+			padding-bottom: 0;
+		}
+		.team .row {
+			margin-bottom: 0;
+			margin-top: 1rem;
+		}
+		.team .row:nth-child(3) .person-img img {
+			margin-top: 2rem;
+		}
+		.team .row:nth-child(2) .person-information ul:nth-child(1),
+		.team .row:nth-child(3) .person-information ul:nth-child(1) {
+			left: 1rem;
+		}
+		.team .row:nth-child(2) .person-information ul:nth-child(2) {
 			left: 6rem;
 			top: 0;
+		}
+		.team .row:nth-child(3) .person-information ul:nth-child(2) {
+			left: 14rem;
+			top: -17.5rem;
 		}
 	}
 	
@@ -1236,6 +1268,10 @@ section {
 			position: relative;
 			margin-top: 2rem;
 			padding-left: 6rem;
+		}
+		.team .row:nth-child(3) .person-information ul:nth-child(2) {
+			left: 5rem;
+			top: 0;
 		}
 	}
 
@@ -1260,12 +1296,25 @@ section {
 		}
 	}
 
+	@media only screen and (max-width: 576px) {
+		.team .row:nth-child(3) .person-information ul:nth-child(2) {
+			left: 14rem;
+			top: -17.5rem;
+		}
+	}
+
 	@media only screen and (max-width: 500px) {
 		.team .person-information {
 			padding-left: 2rem;
 		}
 		.team .person-information ul li {
 			font-size: 1.3rem;
+		}
+		.team .row:nth-child(2) .person-information ul:nth-child(2) {
+			left: 3rem;
+		}
+		.team .row:nth-child(3) .person-information ul:nth-child(2) {
+			left: 10rem;
 		}
 	}
 
