@@ -1427,7 +1427,7 @@ section {
 
 	@media only screen and (max-width: 360px) {
 		.team {
-			height: 180vh;
+			height: 200vh;
 		}
 		.team .row:nth-child(2), .team .row:nth-child(3) {
 			height: 95vh;
